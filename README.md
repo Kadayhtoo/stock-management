@@ -44,5 +44,10 @@ insert into users (username, email, password, role) values ('Super Admin', 'supe
 email=>superadmin@gmail.com
 password=>admin123
 
+#Run Project 
+docker-compose up -d
+
+Then go to http://localhost:8000
+
 #Run unit test like that 
 docker-compose exec app php tests/Unit/UserRegisterTest.php
